@@ -16,8 +16,8 @@
 | messageLanguage | String   | 模板语言                                                     | 是                               | en                                                           |
 | headerType      | Integer  | 消息头部1-None，2-Text，3-Image, 4-Video, 5-Document         | 是                               | 1                                                            |
 | caption         | String   | 消息标题                                                     | 否                               | welcome                                                      |
-| messageBody     | String   | 消息主体，也就是发送内容,如果是可变参数，参数用{{1}}表示，其中数字可变，代表第几个参数 | 是                               | Your code is {{1}}                                           |
-| footer          | String   | 页脚，如果没有可以不传值                                     | 否                               | Thanks                                                       |
+| messageBody     | String   | 消息主体，即发送内容,如果是可变参数，参数用{{1}},{{2}}...{{n}}表示 | 是                               | Your code is {{1}} , valid in {{2}} minutes                                         |
+| footer          | String   | 页脚                                     | 否                               | Thanks                                                       |
 | buttonType      | Integer  | 响应类型（针对消息客户可以回复对应操作， 0-无按钮,1-快捷回复,2-响应按钮） | 否                               | 1                                                            |
 | buttons         | List     | 响应按钮 集合                                                | 否（如果buttonType非0，则必填）  |                                                              |
 | headerExample   | map      | 请求头变量示例                                               | 否(如果请求头中含有变量，则必填) | {"header_handle":["https://scontent.whatsapp.net/v/t61.29466-34/346690475_963468361631965_8621223592915055299_n.png?ccb=1-7&_nc_sid=57045b&_nc_ohc=4h6G9vAI77MAX8acITg&_nc_ht=scontent.whatsapp.net&edm=AIJs65cEAAAA&oh=01_AdRIyuECOPcniA6SZZkF87S7GR0MTcRww0tCHZe-JaJFRg&oe=64939A67"]} |
