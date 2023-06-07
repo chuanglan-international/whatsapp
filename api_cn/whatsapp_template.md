@@ -30,7 +30,7 @@ buttons的参数释义
 | ------------- | ------- | ----------------------------------------------------------- | ------------------------------------------- | ------------------------------------ |
 | label         | String  | 按钮文字                                                    | 是                                          | reply                                |
 | phone         | String  | 电话号码，格式**+86136XXXXXXXX**                            | 否                                          | +86136XXXXXXXX                       |
-| targetUrl     | String  | 响应按钮的访问链接**必须以http://或者****https****://开头** | 否                                          | https://www.baidu.com                |
+| targetUrl     | String  | 响应按钮的访问链接必须以http://或者https://开头 | 否                                          | https://www.baidu.com                |
 | buttonExample | list    | 请求按钮变量示例                                            | 否(请求按钮中含有变量时则必填)              | [https://www.chuanglan.com/document] |
 
 ## 1.3  示例json
