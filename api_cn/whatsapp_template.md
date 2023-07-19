@@ -11,6 +11,7 @@
 | 参数            | 参数类型 | 参数释义                                                     | 是否必填                         | 示例                                                         |
 | --------------- | -------- | ------------------------------------------------------------ | -------------------------------- | ------------------------------------------------------------ |
 | accountName     | String   | 用户API帐号                                                  | 是                               | I7116157                                                     |
+| wabaId          | String   | wabaId                                                       | 必填                             | 121009624329909                                              |
 | name            | String   | 模板名称，自定义                                             | 是                               | OTP_TEMP                                                     |
 | category        | Integer  | 短信类型 1-营销,4-验证码                                     | 是                               | 1                                                            |
 | messageLanguage | String   | 模板语言                                                     | 是                               | en                                                           |
@@ -22,7 +23,6 @@
 | buttons         | List     | 响应按钮 集合                                                | 否（如果buttonType非0，则必填）  |                                                              |
 | headerExample   | map      | 请求头变量示例                                               | 否(如果请求头中含有变量，则必填) | {"header_handle":["https://scontent.whatsapp.net/v/t61.29466-34/346690475_963468361631965_8621223592915055299_n.png?ccb=1-7&_nc_sid=57045b&_nc_ohc=4h6G9vAI77MAX8acITg&_nc_ht=scontent.whatsapp.net&edm=AIJs65cEAAAA&oh=01_AdRIyuECOPcniA6SZZkF87S7GR0MTcRww0tCHZe-JaJFRg&oe=64939A67"]} |
 | bodyExample     | map      | 请求体变量示例                                               | 否(如果请求体中含有变量，则必填) | {"body_text":[["OTP","Video SMS"]]}                          |
-| wabaId          | String   | wabaId                                                       | 必填                             | 121009624329909                                              |
 
 buttons的参数释义
 
