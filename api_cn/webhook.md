@@ -3,7 +3,7 @@
 | 字段名称  | 类型   | 备注       | 示例                                 |
 | --------- | ------ | ---------- | ------------------------------------ |
 | id        | String | Event Id   | e5cb1bc6-ad90-419d-8f83-aa394c0b7cc7 |
-| type      | String | Event 类型 | whatsapp_message_status_updated      |
+| type      | String | [Event 类型](#event-type-code) | whatsapp_message_status_updated      |
 | eventTime | String | Event时间  | 2023-02-22T12:00:00.000Z             |
 | body      | JSON   | 消息体     |                                      |
 
