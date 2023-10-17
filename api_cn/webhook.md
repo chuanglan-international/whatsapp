@@ -540,8 +540,40 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 }
 ```
 
+### 模板回调消息体：body
 
+| 字段名称         | 类型   | 备注                    | 示例                                                         |
+| ---------------- | ------ | ----------------------- | ------------------------------------------------------------ |
+| accountName      | String | 账号                    |                                                              |
+| category         | String | 模板类型                | 模板类型<br/>MARKETING:营销<br/>AUTHENTICATION:验证码<br/>UTILITY:通知|
+| reason           | String | 理由                    |                                                              |
+| templateId       | String | meta平台模板id(对应sid) |                                                              |
+| templateLanguage | String | 模板语言                |                                                              |
+| templateName     | String | 模板名称                |                                                              |
+| templateStatus   | String | 模板状态                | PENDING:审核中<br/>APPROVED:审核通过<br/>REJECTED:驳回<br/>PAUSED:暂停<br/>DISABLED:禁用 |
+| wabaId           | String | wabaId                  |                                                              |
 
+#### 示例
+
+##### 回调示例：APPROVED
+
+```JSON
+{
+    "id": "fd201190-50dc-4151-baec-1d16c8a704e1",
+    "type": "whatsapp_template_status_updated",
+    "eventTime": "2023-10-16T13:04:57.644Z",
+    "body": {
+        "accountName": "IW2267527",
+        "category": "AUTHENTICATION",
+        "reason": "NONE",
+        "templateId": "998961841525295",
+        "templateLanguage": "en_US",
+        "templateName": "transland_common_otp",
+        "templateStatus": "APPROVED",
+        "wabaId": "110129512080569"
+    }
+}
+```
 
 
 ## Event Type Code
@@ -550,6 +582,6 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 | :----: | :----: | ------ |
 |  whatsapp_message_status_updated  | 消息状态报告 | 可用 |
 | whatsapp_mo_message_received | 上行消息 | 可用 |
-| whatsapp_template_status_updated | 模板状态更新 | 更新中 |
+| whatsapp_template_status_updated | 模板状态更新 | 可用 |
 | whatsapp_account_review_updated | 账号审核状态更新 | 更新中 |
 | whatsapp_phone_number_name_update | 发送号码名称更新 | 更新中 |
