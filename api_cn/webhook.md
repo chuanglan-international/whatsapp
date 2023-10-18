@@ -198,6 +198,7 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 
 
 #### 媒体消息
+媒体消息推送内容中，有`link`字段，是媒体文件的下载链接。参照 [根据返回的link查看媒体文件](#根据返回的link查看媒体文件)
 
 ##### 图像消息
 
@@ -574,6 +575,36 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
     }
 }
 ```
+
+### 根据返回的link查看媒体文件
+1. ### Request URL
+GET http://waapi.tig253.com/intwa-api/whatsapp/media/download/{媒体id}
+
+#### Request Header
+
+| 参数名 |  类型  | 是否必填 |          备注          |               示例               |
+| :----: | :----: | :------: | :--------------------: | :------------------------------: |
+|  sign  | String |    Y     | 签名，参考接口加密规则 | 70cc57ad4ea2eea0960c9ee40234567c |
+| nonce  | String |    Y     |         随机数         |              123456              |
+
+1. ### Request Params
+
+|   参数名    |  类型  | 是否必填 |  备注   | 示例 |
+| :---------: | :----: | :------: | :-----: | :--: |
+| accountName | string |   必须   | API账号 |      |
+|   wabaId    | string |   必须   | wabaId  |      |
+
+#### 请求示例
+```
+请求头加sign和nonce参数
+http://waapi.tig253.com/intwa-api/whatsapp/media/download/123456789?accountName=IW123456&wabaId=10023456789
+```
+#### response
+
+文件
+
+#### 接口签名规则
+参照发送接口加签规则
 
 
 ## Event Type Code
