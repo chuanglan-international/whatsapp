@@ -382,6 +382,77 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 }
 ```
 
+##### 联系人消息
+
+```JSON
+{
+    "body": {
+        "accountName": "IW*****0",
+        "contact": {
+            "addresses": [
+                {
+                    "city": "CONTACT_CITY",
+                    "country": "CONTACT_COUNTRY",
+                    "countryCode": "CONTACT_COUNTRY_CODE",
+                    "state": "CONTACT_STATE",
+                    "street": "CONTACT_STREET",
+                    "type": "HOME or WORK",
+                    "zip": "CONTACT_ZIP"
+                }
+            ],
+            "birthday": "CONTACT_BIRTHDAY",
+            "emails": [
+                {
+                    "email": "CONTACT_EMAIL",
+                    "type": "WORK or HOME"
+                }
+            ],
+            "name": {
+                "firstName": "CONTACT_FIRST_NAME",
+                "formattedName": "CONTACT_FORMATTED_NAME",
+                "lastName": "CONTACT_LAST_NAME",
+                "middleName": "CONTACT_MIDDLE_NAME",
+                "prefix": "CONTACT_PREFIX",
+                "suffix": "CONTACT_SUFFIX"
+            },
+            "org": {
+                "company": "CONTACT_ORG_COMPANY",
+                "department": "CONTACT_ORG_DEPARTMENT",
+                "title": "CONTACT_ORG_TITLE"
+            },
+            "phones": [
+                {
+                    "phone": "CONTACT_PHONE",
+                    "type": "HOME or WORK>",
+                    "wa_id": "CONTACT_WA_ID"
+                }
+            ],
+            "urls": [
+                {
+                    "type": "HOME or WORK",
+                    "url": "CONTACT_URL"
+                }
+            ]
+        },
+        "customerProfile": {
+            "name": "Jack"
+        },
+        "from": "86166***7612",
+        "id": "f3390ef2718549ecaa404d147e3311c6",
+        "sendTime": "2023-09-14T02:47:27.000Z",
+        "to": "62882****9509",
+        "type": "contacts",
+        "wabaId": "11012****80569",
+        "wamid": "wamid.HBgNNjI4Nzc3NzI0NjMxMhUCABIYIEQzMDMxQ0NEMEQyOUNFOUQyOEFBMzZGMUUxNDU4REI5AA=="
+    },
+    "eventTime": "2024-02-29T09:54:01.356Z",
+    "id": "2043a860-d52f-4743-b61d-6da24c472c44",
+    "type": "whatsapp_mo_message_received"
+}
+```
+
+
+
 #### 模板按钮回复消息
 
 客户点击[互动消息模板](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#interactive-message-templates)中的快速回复按钮时，系统会发送响应。以下是回调格式示例。
