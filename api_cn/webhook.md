@@ -387,66 +387,68 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 ```JSON
 {
     "body": {
-        "accountName": "IW*****0",
-        "contact": {
-            "addresses": [
-                {
-                    "city": "CONTACT_CITY",
-                    "country": "CONTACT_COUNTRY",
-                    "countryCode": "CONTACT_COUNTRY_CODE",
-                    "state": "CONTACT_STATE",
-                    "street": "CONTACT_STREET",
-                    "type": "HOME or WORK",
-                    "zip": "CONTACT_ZIP"
-                }
-            ],
-            "birthday": "CONTACT_BIRTHDAY",
-            "emails": [
-                {
-                    "email": "CONTACT_EMAIL",
-                    "type": "WORK or HOME"
-                }
-            ],
-            "name": {
-                "firstName": "CONTACT_FIRST_NAME",
-                "formattedName": "CONTACT_FORMATTED_NAME",
-                "lastName": "CONTACT_LAST_NAME",
-                "middleName": "CONTACT_MIDDLE_NAME",
-                "prefix": "CONTACT_PREFIX",
-                "suffix": "CONTACT_SUFFIX"
-            },
-            "org": {
-                "company": "CONTACT_ORG_COMPANY",
-                "department": "CONTACT_ORG_DEPARTMENT",
-                "title": "CONTACT_ORG_TITLE"
-            },
-            "phones": [
-                {
-                    "phone": "CONTACT_PHONE",
-                    "type": "HOME or WORK>",
-                    "wa_id": "CONTACT_WA_ID"
-                }
-            ],
-            "urls": [
-                {
-                    "type": "HOME or WORK",
-                    "url": "CONTACT_URL"
-                }
-            ]
-        },
+        "accountName": "IW31****5",
+        "contact": [
+            {
+                "addresses": [
+                    {
+                        "city": "CONTACT_CITY1",
+                        "country": "CONTACT_COUNTRY1",
+                        "countryCode": "CONTACT_COUNTRY_CODE1",
+                        "state": "CONTACT_STATE1",
+                        "street": "CONTACT_STREET1",
+                        "type": "HOME or WORK1",
+                        "zip": "CONTACT_ZIP1"
+                    }
+                ],
+                "birthday": "CONTACT_BIRTHDAY1",
+                "emails": [
+                    {
+                        "email": "CONTACT_EMAIL1",
+                        "type": "WORK or HOME1"
+                    }
+                ],
+                "name": {
+                    "firstName": "CONTACT_FIRST_NAME1",
+                    "formattedName": "CONTACT_FORMATTED_NAME1",
+                    "lastName": "CONTACT_LAST_NAME1",
+                    "middleName": "CONTACT_MIDDLE_NAME1",
+                    "prefix": "CONTACT_PREFIX1",
+                    "suffix": "CONTACT_SUFFIX1"
+                },
+                "org": {
+                    "company": "CONTACT_ORG_COMPANY1",
+                    "department": "CONTACT_ORG_DEPARTMENT1",
+                    "title": "CONTACT_ORG_TITLE1"
+                },
+                "phones": [
+                    {
+                        "phone": "CONTACT_PHONE1",
+                        "type": "HOME or WORK>1",
+                        "wa_id": "CONTACT_WA_ID1"
+                    }
+                ],
+                "urls": [
+                    {
+                        "type": "HOME or WORK1",
+                        "url": "CONTACT_URL1"
+                    }
+                ]
+            }
+        ],
         "customerProfile": {
             "name": "Jack"
         },
-        "from": "86166***7612",
-        "id": "f3390ef2718549ecaa404d147e3311c6",
-        "sendTime": "2023-09-14T02:47:27.000Z",
-        "to": "62882****9509",
+        "from": "86183****2197",
+        "id": "a1301cb6d0094b2fae36546c22e09044",
+        "sendTime": "2024-03-07T10:46:24.000Z",
+        "to": "62811****6819",
         "type": "contacts",
-        "wabaId": "11012****80569",
-        "wamid": "wamid.HBgNNjI4Nzc3NzI0NjMxMhUCABIYIEQzMDMxQ0NEMEQyOUNFOUQyOEFBMzZGMUUxNDU4REI5AA=="
+        "wabaId": "1**********9",
+        "wamid": "wamid.HBgNODYxODM1NTA5MjE5NxUCABIYIDg3RDVFMzQyRjIwQkM5NDQyMDI5OTRERERGNUYx*****=="
     },
-    "eventTime": "2024-02-29T09:54:01.356Z",
-    "id": "2043a860-d52f-4743-b61d-6da24c472c44",
+    "eventTime": "2024-03-08T09:42:06.363Z",
+    "id": "e2bafad5-0aa9-4465-9ed1-c5c01741c5e1",
     "type": "whatsapp_mo_message_received"
 }
 ```
