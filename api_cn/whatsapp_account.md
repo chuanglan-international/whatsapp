@@ -1,3 +1,5 @@
+# WhatsApp账号相关
+
 ## 1.1 账号信息绑定
 
 **Path：** /intwa-api/whatsapp/account/bind
