@@ -26,3 +26,14 @@
 | code    | integer | 必须   |     |    | 0：成功<br/>其他：失败 |
 | data    | object  | 必须   |     |    |            |
 | message | string  | 必须   |     |    |            |
+
+*   请求参数示例
+
+    ```json
+     {
+        "accountName": "IW****",
+        "wabaId":"27899******57661",
+        "phoneNumberId":"2673*****93634",
+        "phoneNumber":"86133****5155"
+    }
+    ```
