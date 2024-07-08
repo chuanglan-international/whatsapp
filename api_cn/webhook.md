@@ -15,7 +15,7 @@ Waba有消息更新时，会通过Webhook将更新事件推送给客户。包括
 | id           | String | Message Id                        | 356139161272397824                     |
 | accountName  | String | API账号名称                       | IW123456                               |
 | wabaId       | String | Waba Id                           | 11231231212331                         |
-| status       | String | 消息状态：delivered、read、failed | delivered                              |
+| status       | String | 消息状态：delivered、read、failed、SMECL:FAILED | delivered                              |
 | wamid        | String | WhatsApp消息Id                    | wamid.HBgNODYxNjY4NTE3NzYxMhUCABEYEjQ0 |
 | conversation | JSON   | 会话信息，status是delivered时有值 |                                        |
 | errorData    | JSON   | 错误消息，status是failed时有值    |                                        |
