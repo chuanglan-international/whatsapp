@@ -15,7 +15,7 @@ Post https://waapi.tig253.com/intwa-api/whatsapp/msg
 
 |     参数名      |      类型      | 是否必填 |                             备注                             |                             示例                             |
 | :-------------: | :------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|     account     |     String     |    Y     |                         API账号名称                          |                          IW2578654                           |
+|     account     |     String     |    Y     |                         API账号/apiKey                         |                          IW25**654/wbUh8***50jxACBA                           |
 |     wabaId      |     String     |    Y     |                           waba账号                           |                       110129512080556                        |
 |   messageType   |     String     |    Y     | 消息内容类型template:模板text:文本image:图片video:视频audio:音频location:定位document:文档sticker:贴图*contacts：联系人**interactive：互动消息* |                            image                             |
 |       uid       |     String     |    N     |                   客户批次号,不超过100字符                   |                      202303306668899999                      |
