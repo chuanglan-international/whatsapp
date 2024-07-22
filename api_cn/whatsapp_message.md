@@ -679,7 +679,7 @@ public class SignUtil {
                sb.append(entry.getValue());
            }
        }
-       return DigestUtils.md5DigestAsHex((sb.toString() + password).getBytes()).toLowerCase();
+       return DigestUtils.md5DigestAsHex((sb.toString() + password).getBytes(StandardCharsets.UTF_8)).toLowerCase();
    }
 
      public static void main(String[] args) {
