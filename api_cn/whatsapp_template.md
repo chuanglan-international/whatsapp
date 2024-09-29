@@ -304,6 +304,8 @@ Path： /intwa-api/whatsapp/uploadFile
 | category        | list   | 非必须  | 模板类型                                                  | 1-MARKETING,2-AUTHENTICATION,3-UTILITY |
 | messageLanguage | list   | 非必须  | 模板语言(eg\:en)                                          | 模板支持的语言请参考附录2                          |
 | auditStatus     | list   | 非必须  | 模板状态                                                  |                                        |
+| page            | integer | 必须   | 页码                                      |                                        |
+| size            | integer | 必须   | 页数                                      |                                        |
 
 &#x20;返回参数
 
