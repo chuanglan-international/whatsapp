@@ -17,7 +17,7 @@
 | accountName    | string  | 必须   | 用户api账号          |      |
 | wabaId         | string  | 必须   | WhatsApp商业账户唯一标识 |      |
 | phoneNumberId  | string  | 必须   | 手机号id          |      |
-| phoneNumber    | string  | 必须   | 手机号码         |      |
+| phoneNumber    | string  | 非必须   | 手机号码         |      |
 
 &#x20;返回参数
 
