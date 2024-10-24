@@ -2,7 +2,7 @@
 
 # Request URL
 
-Post https://waapi.tig253.com/intwa-api/whatsapp/msg
+Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ## Request Header
 
@@ -10,12 +10,13 @@ Post https://waapi.tig253.com/intwa-api/whatsapp/msg
 | :----: | :----: | :------: | :--------------------: | :------------------------------: |
 |  sign  | String |    Y     | 参数签名，详见签名规则 | 1424e0e4c9b8c740ea0231b0800bbf92 |
 | nonce  | String |    Y     |     随机数或时间戳     |          1679903484890           |
+| appKey  | String |    Y     |    Api Key    |          1679903484890           |
 
 ## Request Body
 
 |     参数名      |      类型      | 是否必填 |                             备注                             |                             示例                             |
 | :-------------: | :------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|     account     |     String     |    Y     |                         API账号/apiKey                         |                          IW253654/wbUh8ds50jxACBA                           |
+
 |     wabaId      |     String     |    Y     |                           waba账号                           |                       110129512080556                        |
 |   messageType   |     String     |    Y     | 消息内容类型template:模板text:文本image:图片video:视频audio:音频location:定位document:文档sticker:贴图*contacts：联系人**interactive：互动消息* |                            image                             |
 |       uid       |     String     |    N     |                   客户批次号,不超过100字符                   |                      202303306668899999                      |
