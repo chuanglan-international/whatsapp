@@ -16,7 +16,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 |     参数名      |      类型      | 是否必填 |                             备注                             |                             示例                             |
 | :-------------: | :------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-
 |     wabaId      |     String     |    Y     |                           waba账号                           |                       110129512080556                        |
 |   messageType   |     String     |    Y     | 消息内容类型template:模板text:文本image:图片video:视频audio:音频location:定位document:文档sticker:贴图*contacts：联系人**interactive：互动消息* |                            image                             |
 |       uid       |     String     |    N     |                   客户批次号,不超过100字符                   |                      202303306668899999                      |
@@ -215,7 +214,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW2578654",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -230,7 +228,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW9144659",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -257,7 +254,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
             "value":"yHkYRww90" http://xxxxx?type=yHkYRww90
         }
     ],
-    "account": "IW2907527",
     "wabaId":"110129512080522",
     "language":"en_US",
     "messageType":"template",
@@ -278,7 +274,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
         "link":"https://www.pianshen.com/thumbs/886/535cfdc357b166dc020c70d0533d85f6.JPEG"
     },
     "bodyParams": ["TIG Cinema", "2023-03-17 10:00:00", "F", "66"],
-    "account": "IW2907527",
     "wabaId":"110129512080522",
     "language":"en_US",
     "messageType":"template",
@@ -294,7 +289,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW9144659",
     "wabaId":"110129512080522",
     "bodyParams": ["TIG", "665578"],
     "recipientNumber": "6285234567899",
@@ -311,7 +305,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW2578654",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -330,7 +323,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW2578654",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -346,7 +338,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW2578654",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -362,7 +353,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 
 ```JSON
 {
-    "account": "IW2578654",
     "wabaId":"110129512080522",
     "recipientNumber": "6285234567899",
     "sendNumber": "8618912123456",
@@ -385,7 +375,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 ```JSON
 {
     "uid": "2023052500002",//批次号 可选
-    "account": "IW2578654",
     "wabaId": "110129512080522",
     "messageType": "contacts",
     "recipientNumber": "8616685177612",
@@ -448,7 +437,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 ```JSON
 {
     "uid": "2023052500002",
-    "account": "IW2267524",
     "wabaId": "110129512080523",
     "messageType": "interactive",
     "recipientNumber": "8616685177612",
@@ -509,7 +497,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 ```JSON
 {
     "uid": "2023052500002",
-    "account": "IW2267524",
     "wabaId": "110129512080532",
     "messageType": "interactive",
     "recipientNumber": "8616685177612",
@@ -553,7 +540,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 ```JSON
 {
     "uid": "2023052500002",
-    "account": "IW2267524",
     "wabaId": "110129512080532",
     "messageType": "interactive",
     "recipientNumber": "8616685177612",
@@ -579,7 +565,6 @@ Post https://waapi.tig253.com/intwa-api/v2/whatsapp/msg
 ```JSON
 {
     "uid": "2023052500002",
-    "account": "IW2267524",
     "wabaId": "110129512080532",
     "messageType": "interactive",
     "recipientNumber": "8616685177612",
@@ -688,7 +673,6 @@ public class SignUtil {
         String password = "4Z7bMS1eLI6895";
        
         WhatsAppSubmit request = new WhatsAppSubmit();
-        request.setAccount("IW9144659");
         request.setSendNumber("8618912123456");
         request.setRecipientNumber("6285234567899");
         request.setTemplateName("tig_otp");
