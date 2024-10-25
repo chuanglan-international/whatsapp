@@ -56,7 +56,6 @@ Path： /intwa-api/v2/whatsapp/uploadFile
 
 | 名称                | 类型        | 是否必须 | 备注                                                                    | 其他信息                                                                                                |
 | :---------------- | :-------- | :--- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-                                                |
 | wabaId            | string    | 必须   | WhatsApp商业账户唯一标识                                                      |                                                                                                     |
 | name              | string    | 必须   | 模板名称(eg\:limited\_time\_offer\_tuscan\_getaway\_2023)                 | 由小写字母、数字、下划线组合,字段限制为512个字符.                                                                         |
 | category          | string    | 必须   | 模板类型                                                                  | 1-MARKETING,2-AUTHENTICATION,3-UTILITY                                                              |
@@ -213,7 +212,6 @@ Path： /intwa-api/v2/whatsapp/uploadFile
 
 ```json
 {
-    "accountName": "account",
     "name": "authentication_code_0001",
     "category": "2",
     "messageLanguage": "zh_CN",
@@ -312,7 +310,6 @@ Path： /intwa-api/v2/whatsapp/uploadFile
 | ├─ pages          | integer   | 非必须  |     | 页数                                                                    |                                                                                                     |
 | ├─ list           | object    | 非必须  |     |                                                                       |                                                                                                     |
 | ├─ id             | integer   | 非必须  |     | 模板主键id                                                                |                                                                                                     |
-| ├─ accountName    | string    | 非必须  |     | 用户api账号                                                               |                                                                                                     |
 | ├─ wabaId         | string    | 非必须  |     | WhatsApp商业账户唯一标识                                                      |                                                                                                     |
 | ├─ name           | string    | 非必须  |     | 模板名称                                                                  | 由小写字母、数字、下划线组合,字段限制为512个字符.                                                                         |
 | ├─category        | string    | 非必须  |     | 模板类型                                                                  | 1-MARKETING,2-AUTHENTICATION,3-UTILITY                                                              |
