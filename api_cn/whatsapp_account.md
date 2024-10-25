@@ -2,7 +2,7 @@
 ##
 ## 1.1 账号信息绑定
 
-**Path：** /intwa-api/whatsapp/account/bind
+**Path：** /intwa-api/v2/whatsapp/account/bind
 
 **Content-Type:** application/json
 
@@ -14,7 +14,6 @@
 
 | 名称          | 类型      | 是否必须 | 备注               | 其他信息 |
 | :---------- | :------ | :--- | :--------------- | :--- |
-| accountName    | string  | 必须   | 用户api账号          |      |
 | wabaId         | string  | 必须   | WhatsApp商业账户唯一标识 |      |
 | phoneNumberId  | string  | 必须   | 手机号id          |      |
 | phoneNumber    | string  | 非必须   | 手机号码         |      |
@@ -31,7 +30,6 @@
 
     ```json
      {
-        "accountName": "IW****",
         "wabaId":"27899******57661",
         "phoneNumberId":"2673*****93634",
         "phoneNumber":"86133****5155"
@@ -44,7 +42,7 @@
 ##
 ## 1.2 手机信息查询
 
-**Path：** /intwa-api/whatsapp/account/phoneInfo
+**Path：** /intwa-api/v2/whatsapp/account/phoneInfo
 
 **Content-Type:** application/json
 
@@ -56,7 +54,6 @@
 
 | 名称          | 类型      | 是否必须 | 备注               | 其他信息 |
 | :---------- | :------ | :--- | :--------------- | :--- |
-| accountName    | string  | 必须   | 用户api账号          |      |
 | wabaId         | string  | 必须   | WhatsApp商业账户唯一标识 |      |
 
 
@@ -79,7 +76,6 @@
 
     ```json
      {
-        "accountName": "IW****",
         "wabaId":"27899******57661"
     }
     ```
@@ -105,7 +101,7 @@
 ##
 ## 1.3 waba信息查询
 
-**Path：** /intwa-api/whatsapp/account/wabaInfo
+**Path：** /intwa-api/v2/whatsapp/account/wabaInfo
 
 **Content-Type:** application/json
 
@@ -117,7 +113,6 @@
 
 | 名称          | 类型      | 是否必须 | 备注               | 其他信息 |
 | :---------- | :------ | :--- | :--------------- | :--- |
-| accountName    | string  | 必须   | 用户api账号          |      |
 
 
 &#x20;返回参数
