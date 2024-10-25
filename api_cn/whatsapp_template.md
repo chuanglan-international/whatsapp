@@ -2,7 +2,7 @@
 
 ## 1.1 文件上传
 
-Path： /intwa-api/whatsapp/uploadFile
+Path： /intwa-api/v2/whatsapp/uploadFile
 
 **Content-Type:** multipart/form-data
 
@@ -44,7 +44,7 @@ Path： /intwa-api/whatsapp/uploadFile
 
 ## 1.2 模板创建
 
-**Path：** /intwa-api/whatsapp/template/submit
+**Path：** /intwa-api/v2/whatsapp/template/submit
 
 **Content-Type:** application/json
 
@@ -56,7 +56,7 @@ Path： /intwa-api/whatsapp/uploadFile
 
 | 名称                | 类型        | 是否必须 | 备注                                                                    | 其他信息                                                                                                |
 | :---------------- | :-------- | :--- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| accountName       | string    | 必须   | 用户api账号                                                               |                                                                                                     |
+                                                |
 | wabaId            | string    | 必须   | WhatsApp商业账户唯一标识                                                      |                                                                                                     |
 | name              | string    | 必须   | 模板名称(eg\:limited\_time\_offer\_tuscan\_getaway\_2023)                 | 由小写字母、数字、下划线组合,字段限制为512个字符.                                                                         |
 | category          | string    | 必须   | 模板类型                                                                  | 1-MARKETING,2-AUTHENTICATION,3-UTILITY                                                              |
@@ -98,7 +98,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
     ```json
      {
-        "accountName": "account",
         "wabaId": "wabaId",
         "name": "transland_marketing_promotion_base",
         "category": "1",
@@ -115,7 +114,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
     ```json
     {
-        "accountName": "account",
         "name": "transland_marketing_promotion_01",
         "category": "1",
         "messageLanguage": "zh_CN",
@@ -164,7 +162,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
     ```json
     {
-        "accountName": "account",
         "name": "mid_autumn_festival_marketing_image_01",
         "category": "1",
         "messageLanguage": "en",
@@ -236,7 +233,7 @@ Path： /intwa-api/whatsapp/uploadFile
 
 ## 1.3 模板修改
 
-**Path：** /intwa-api/whatsapp/template/update
+**Path：** /intwa-api/v2/whatsapp/template/update
 
 **Content-Type:** application/json
 
@@ -248,7 +245,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
 | 名称                | 类型        | 是否必须 | 备注                                                                    | 其他信息                                                                                                |
 | :---------------- | :-------- | :--- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| accountName       | string    | 必须   | 用户api账号                                                               |                                                                                                     |
 | wabaId            | string    | 必须   | WhatsApp商业账户唯一标识                                                      |                                                                                                     |
 | name              | string    | 必须   | 模板名称(eg\:limited\_time\_offer\_tuscan\_getaway\_2023)                 | 由小写字母、数字、下划线组合,字段限制为512个字符.                                                                         |
 | templateId        | string    | 必须   | 模板id                                                                  |                                                                                                     |
@@ -285,7 +281,7 @@ Path： /intwa-api/whatsapp/uploadFile
 
 ## 1.4 模板查询
 
-**Path：** /intwa-api/whatsapp/template/list
+**Path：** /intwa-api/v2/whatsapp/template/list
 
 **Content-Type:** application/json
 
@@ -297,7 +293,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
 | 名称              | 类型     | 是否必须 | 备注                                                    | 其他信息                                   |
 | :-------------- | :----- | :--- | :---------------------------------------------------- | :------------------------------------- |
-| accountName     | string | 必须   | 用户api账号                                               |                                        |
 | wabaId          | string | 必须   | WhatsApp商业账户唯一标识                                      |                                        |
 | name            | string | 非必须  | 模板名称(eg\:limited\_time\_offer\_tuscan\_getaway\_2023) | 由小写字母、数字、下划线组合,字段限制为512个字符.            |
 | templateId      | string | 非必须  | 模板id                                                  |                                        |
@@ -378,7 +373,6 @@ Path： /intwa-api/whatsapp/uploadFile
                     }
                 ],
                 "messageBody": "Dear customer {{1}}，your SMS API account {{2}} is avaliable, please rember the secret of this account. The secret is sent via email.",
-                "accountName": "accountName",
                 "footer": "Have a nice sms experience.",
                 "messageLanguage": "zh_CN",
                 "caption": "Transland API Account {{1}} Opened",
@@ -410,7 +404,7 @@ Path： /intwa-api/whatsapp/uploadFile
 
 ## 1.5 模板删除
 
-**Path：** /intwa-api/whatsapp/template/delete
+**Path：** /intwa-api/v2/whatsapp/template/delete
 
 **Content-Type:** application/json
 
@@ -422,7 +416,6 @@ Path： /intwa-api/whatsapp/uploadFile
 
 | 名称          | 类型      | 是否必须 | 备注               | 其他信息 |
 | :---------- | :------ | :--- | :--------------- | :--- |
-| accountName | string  | 必须   | 用户api账号          |      |
 | wabaId      | string  | 必须   | WhatsApp商业账户唯一标识 |      |
 | id          | integer | 必须   | 模板主键id           |      |
 
